@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className="">
       <div
-        className="login-main-page relative bg-cover z-10  md:p-[50px] lg:p-[50px] p-[100px] sm:p-[0]  md:h-full h-screen"
+        className="login-main-page relative bg-cover z-10  md:p-12 lg:p-12 p-24 sm:p-0  md:h-full h-screen"
         style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "50%",
@@ -14,11 +14,11 @@ const Login = () => {
         <div
           className="login-wrapper md:h-full h-[calc(100vh - 100px)]  md:block flex shadow-[0_0_60px_10px_rgb(85,44,44,0.2)] mx-auto bg-whi overflow-hidden  rounded-xl flex h-full min-h-[600px] max-w-[1170px]"
         >
-          <div className="login-aside-left bg-100% overflow-hidden bg-bottom bg-no-repeat md:h-unset md:w-full relative p-[50px] table md:max-full bg-[100$]  w-[60%] md:block
-           before:bg-blu-light before:left-[-35px] before:top-[30%] before:absolute  before:w-[150px]  before:h-[150px] before:rounded-[12px]  before:rotate-[45deg] before:animate-[dzmove_5s_linear_infinite]
-           after:bg-blu after:right-[-30px] after:top-[-30px] after:absolute   after:w-[150px]  after:h-[150px] after:rounded-[12px]  after:rotate-[45deg] after:animate-[dzmove_5s_linear_infinite]	
+          <div className="login-aside-left bg-100% overflow-hidden bg-bottom bg-no-repeat md:h-unset md:w-full relative p-12 table md:max-full bg-[100$]  w-[60%] md:block
+           before:bg-blu-light before:-left-9 before:top-[30%] before:absolute  before:w-36  before:h-36 before:rounded-xl  before:rotate-45 before:animate-[dzmove_5s_linear_infinite]
+           after:bg-blu after:-right-7 after:-top-7 after:absolute   after:w-36   after:h-36 after:rounded-xl  after:rotate-45 after:animate-[dzmove_5s_linear_infinite]	
            ">
-            <a className="md:mb-[20px] absolute flex items-center md:relative md:justify-center " href="">
+            <a className="md:mb-5 absolute flex items-center md:relative md:justify-center " href="">
               <svg
                 className="logo-abbr me-3 mr-4"
                 width="64"
@@ -88,8 +88,8 @@ const Login = () => {
               </svg>
             </a>
             <div className="login-description table-cell align-bottom md:align-unset">
-              <h2 className="main-title mb-2 md:text-center text-whi text-[36px] leading-[1.3] font-bold">Welcome To Griya</h2>
-              <p className="mb-4 md:text-center text-[14px] leading-[1.5] text-hsla-whi ">
+              <h2 className="main-title mb-2 md:text-center text-whi text-4xl leading-snug font-bold">Welcome To Griya</h2>
+              <p className="mb-4 md:text-center text-sm leading-normal text-hsla-whi ">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -97,22 +97,22 @@ const Login = () => {
               </p>
               <ul className="social-icons mt-4 flex md:justify-center">
                 <li className="mr-2.5">
-                  <a href="/react/demo/login" className=" w-[45px] h-[45px] text-whi rounded-[12px] leading-[45px] text-[18px] inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
                     <i className="fa fa-facebook-f"></i>
                   </a>
                 </li>
                 <li className="mr-2.5">
-                  <a href="/react/demo/login" className=" w-[45px] h-[45px] text-whi rounded-[12px] leading-[45px] text-[18px] inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/react/demo/login" className=" w-[45px] h-[45px] text-whi rounded-[12px] leading-[45px] text-[18px] inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
-              <div className="mt-3 bottom-privacy md:text-center text-[14px] leading-[1.5] text-hsla-whi ">
+              <div className="mt-3 bottom-privacy md:text-center text-sm leading-normal text-hsla-whi ">
                 <p>
                   Copyright © Designed &amp; Developed by{" "}
                   <a
@@ -127,13 +127,13 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="login-aside-right  my-auto  md:w-full  md:max-w-full  w-[40%] ">
+          <div className="login-aside-right  my-auto  md:w-full  md:max-w-full  w-2/5 ">
             <div className="row m-0 justify-content-center h-100 align-items-center">
               <div className="p-12">
                 <div className="header">
                   <div className="mb-6">
-                    <h3 className="dz-title mb-1 text-sec text-[32px] font-bold ">Sign in</h3>
-                    <p className="leading-[1.8] text-sec">Sign in by entering information below</p>
+                    <h3 className="dz-title mb-1 text-sec text-3xl font-bold ">Sign in</h3>
+                    <p className="leading-relaxed text-sec">Sign in by entering information below</p>
                   </div>
                 </div>
                 <Form
@@ -147,7 +147,7 @@ const Login = () => {
 
               label="Email"
               initialValue="demo@example.com"
-              className="font-extrabold border-b-2 border-black mb-5  text-[14px]"
+              className="font-extrabold border-b-2 border-black mb-5  text-sm"
               rules={[
                 {
                   required: true,
@@ -167,7 +167,7 @@ const Login = () => {
 
               label="Password"
               initialValue="123456"
-              className="font-extrabold text-[14px] border-b-2 outline-none  border-black"
+              className="font-extrabold text-sm border-b-2 outline-none  border-black"
               rules={[
                 {
                   required: true,
@@ -185,14 +185,14 @@ const Login = () => {
 
             <Form.Item className="py-3">
               <Checkbox>
-                <span className="ml-[10px] text-[14px]  text-sec">Remember my preference</span>
+                <span className="ml-2 text-sm  text-sec">Remember my preference</span>
               </Checkbox>
             </Form.Item>
             <Form.Item className="py-3">
               <Button
                 type="primary"
                 htmlType="submit"
-                className="w-full text-whi bg-blu hover:bg-blu-hover text-[14px] transition-colors p-2 rounded-xl "
+                className="w-full text-whi bg-blu hover:bg-blu-hover text-sm transition-colors p-2 rounded-xl "
               >
                 Sign in
               </Button>
