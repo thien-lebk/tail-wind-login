@@ -6,7 +6,7 @@ const Login = () => {
     <div className="">
       <div
         className=" relative bg-cover backgroundPosition z-10 p-0 sm:p-12 lg:p-24  md:h-screen h-full
-        after:absolute after:h-full after:w-full after:z-0 after:bg-black after:top-0 after:left-0 after:bg-opacity-20
+        after:absolute after:h-full after:w-full after:z-1 after:bg-black after:top-0 after:left-0 after:bg-opacity-20
         "
         style={{
           backgroundImage: `url(${background})`,
@@ -105,7 +105,7 @@ const Login = () => {
                 <li className="mr-2.5">
                   <a
                     href="/react/demo/login"
-                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                    className="flex justify-center items-center w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
                   >
                     <i className="fa fa-facebook-f"></i>
                   </a>
@@ -113,7 +113,7 @@ const Login = () => {
                 <li className="mr-2.5">
                   <a
                     href="/react/demo/login"
-                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                    className="flex justify-center items-center w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
                   >
                     <i className="fa fa-twitter"></i>
                   </a>
@@ -121,7 +121,7 @@ const Login = () => {
                 <li>
                   <a
                     href="/react/demo/login"
-                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                    className="flex justify-center items-center w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
                   >
                     <i className="fa fa-linkedin"></i>
                   </a>
@@ -143,12 +143,12 @@ const Login = () => {
             </div>
           </div>
           <div className="login-aside-right z-10 rounded-b-xl  md:rounded-b-none bg-white md:flex block justify-center items-center h-full my-auto  w-full  max-w-full  md:w-2/5 ">
-            <div className="row  w-full m-0 justify-content-center h-100 align-items-center">
+            <div className=" w-full m-0 justify-content-center h-100 align-items-center">
               <div>
               <div className="p-12 mb-2">
                 <div className="header">
                   <div className="mb-6">
-                    <h3 className="dz-title mb-1 text-black text-3xl font-bold ">
+                    <h3 className="mb-1 text-black text-3xl font-bold ">
                       Sign in
                     </h3>
                     <p className="leading-relaxed text-gray-600">
