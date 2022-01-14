@@ -5,22 +5,26 @@ const Login = () => {
   return (
     <div className="">
       <div
-        className="login-main-page relative bg-cover z-10  md:p-12 lg:p-12 p-24 sm:p-0  md:h-full h-screen"
+        className=" relative bg-cover backgroundPosition z-10 p-0 sm:p-12 lg:p-24  md:h-screen h-full
+        after:absolute after:h-full after:w-full after:z-0 after:bg-black after:top-0 after:left-0 after:bg-opacity-20
+        "
         style={{
           backgroundImage: `url(${background})`,
-          backgroundPosition: "50%",
         }}
       >
-        <div
-          className="login-wrapper md:h-full h-[calc(100vh - 100px)]  md:block flex shadow-[0_0_60px_10px_rgb(85,44,44,0.2)] mx-auto bg-whi overflow-hidden  rounded-xl flex h-full min-h-[600px] max-w-[1170px]"
-        >
-          <div className="login-aside-left bg-100% overflow-hidden bg-bottom bg-no-repeat md:h-unset md:w-full relative p-12 table md:max-full bg-[100$]  w-[60%] md:block
-           before:bg-blu-light before:-left-9 before:top-[30%] before:absolute  before:w-36  before:h-36 before:rounded-xl  before:rotate-45 before:animate-[dzmove_5s_linear_infinite]
-           after:bg-blu after:-right-7 after:-top-7 after:absolute   after:w-36   after:h-36 after:rounded-xl  after:rotate-45 after:animate-[dzmove_5s_linear_infinite]	
-           ">
-            <a className="md:mb-5 absolute flex items-center md:relative md:justify-center " href="">
+        <div className="login-wrapper h-full   block md:flex shadow-sm mx-auto bg-whi overflow-hidden  rounded-xl h-full  max-w-5xl">
+      <div
+            className="login-aside-left  z-10  overflow-hidden bg-bottom bg-no-repeat w-full md:w-3/5 relative p-12 md:table max-full    block
+           before:bg-blue-400 before:ring-offset-8 before:ring-offset-blue-100 before:ring-inset before:ring-blue-100 before:ring-8 before:z-0 before:-left-9 before:top-1/3 before:absolute  before:w-36  before:h-36 before:rounded-xl  before:rotate-45 
+           after:bg-blue-700 after:ring-8 after:ring-offset-8 after:ring-offset-blue-100 after:ring-inset after:ring-blue-100  after:z-0 after:-right-7 after:-top-7 after:absolute   after:w-36   after:h-36 after:rounded-xl  after:rotate-45 
+           "
+          >
+            <a
+              className=" md:absolute flex items-center md:0 mb-5 relative justify-center  md:justify-start"
+              href="/"
+            >
               <svg
-                className="logo-abbr me-3 mr-4"
+                className=" mr-4"
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
@@ -48,7 +52,7 @@ const Login = () => {
                 ></path>
               </svg>
               <svg
-                className="brand-title md:hidden"
+                className=" md:block hidden"
                 width="108"
                 height="44"
                 viewBox="0 0 108 44"
@@ -87,32 +91,43 @@ const Login = () => {
                 ></path>
               </svg>
             </a>
-            <div className="login-description table-cell align-bottom md:align-unset">
-              <h2 className="main-title mb-2 md:text-center text-whi text-4xl leading-snug font-bold">Welcome To Griya</h2>
-              <p className="mb-4 md:text-center text-sm leading-normal text-hsla-whi ">
+            <div className="login-description table-cell md:align-bottom align-unset">
+              <h2 className="text-white mb-2 md:text-left text-center text-4xl leading-snug font-bold">
+                Welcome To Griya
+              </h2>
+              <p className="mb-4 md:text-left text-center md:text-sm leading-normal text-white text-sm ">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
                 normal distribution of letters,
               </p>
-              <ul className="social-icons mt-4 flex md:justify-center">
+              <ul className="social-icons mt-4 flex md:justify-start justify-center">
                 <li className="mr-2.5">
-                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a
+                    href="/react/demo/login"
+                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                  >
                     <i className="fa fa-facebook-f"></i>
                   </a>
                 </li>
                 <li className="mr-2.5">
-                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a
+                    href="/react/demo/login"
+                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                  >
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/react/demo/login" className=" w-11 h-11 text-whi rounded-xl leading-10 text-lg inline-block text-center border-0 bg-hsla-grey transition-all">
+                  <a
+                    href="/react/demo/login"
+                    className=" w-11 h-11 text-white rounded-xl leading-10 text-lg inline-block text-center border-0 bg-blue-400 transition-all"
+                  >
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
-              <div className="mt-3 bottom-privacy md:text-center text-sm leading-normal text-hsla-whi ">
+              <div className="mt-3 bottom-privacy md:text-left text-center text-sm leading-normal text-sm text-white ">
                 <p>
                   Copyright © Designed &amp; Developed by{" "}
                   <a
@@ -127,83 +142,81 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="login-aside-right  my-auto  md:w-full  md:max-w-full  w-2/5 ">
-            <div className="row m-0 justify-content-center h-100 align-items-center">
-              <div className="p-12">
+          <div className="login-aside-right z-10 rounded-b-xl  md:rounded-b-none bg-white md:flex block justify-center items-center h-full my-auto  w-full  max-w-full  md:w-2/5 ">
+            <div className="row  w-full m-0 justify-content-center h-100 align-items-center">
+              <div>
+              <div className="p-12 mb-2">
                 <div className="header">
                   <div className="mb-6">
-                    <h3 className="dz-title mb-1 text-sec text-3xl font-bold ">Sign in</h3>
-                    <p className="leading-relaxed text-sec">Sign in by entering information below</p>
+                    <h3 className="dz-title mb-1 text-black text-3xl font-bold ">
+                      Sign in
+                    </h3>
+                    <p className="leading-relaxed text-gray-600">
+                      Sign in by entering information below
+                    </p>
                   </div>
                 </div>
                 <Form
-          name="loginform"
-          className="bg-white rounded-r-xl text-grey-medium flex flex-col justify-center "
-        >
-         
-          <div>
-            <Form.Item
-                          name={["user", "name"]}
+                  name="loginform"
+                  className="bg-white rounded-r-xl text-grey-medium flex flex-col justify-center "
+                >
+                  <div>
+                    <Form.Item
+                      name={["user", "name"]}
+                      label="Email"
+                      initialValue="demo@example.com"
+                      className="font-extrabold border-b-2 border-black mb-5  text-sm"
+                      
+                    >
+                      <Input
+                        placeholder="Email"
+                        className="w-full focus:outline-none py-3"
+                      />
+                    </Form.Item>
+                    <Form.Item
+                      name={["user", "password"]}
+                      label="Password"
+                      initialValue="123456"
+                      className="font-extrabold text-sm border-b-2 outline-none  border-black"
+                      
+                    >
+                      <input
+                        type="password"
+                        name="password"
+                        required
+                        className="w-full focus:outline-none py-3"
+                      />
+                    </Form.Item>
 
-              label="Email"
-              initialValue="demo@example.com"
-              className="font-extrabold border-b-2 border-black mb-5  text-sm"
-              rules={[
-                {
-                  required: true,
-                  type: "email",
-                  message: "Enter a valid email!!!",
-                },
-                
-              ]}
-            >
-              <Input
-                placeholder="Email"
-                className="w-full focus:outline-none py-3"
-              />
-            </Form.Item>
-            <Form.Item
-                          name={["user", "password"]}
-
-              label="Password"
-              initialValue="123456"
-              className="font-extrabold text-sm border-b-2 outline-none  border-black"
-              rules={[
-                {
-                  required: true,
-                  message: "Enter a valid password!!!",
-                },
-              ]}
-            >
-              <input
-                type="password"
-                name="password"
-                required
-                className="w-full focus:outline-none py-3"
-              />
-            </Form.Item>
-
-            <Form.Item className="py-3">
-              <Checkbox>
-                <span className="ml-2 text-sm  text-sec">Remember my preference</span>
-              </Checkbox>
-            </Form.Item>
-            <Form.Item className="py-3">
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="w-full text-whi bg-blu hover:bg-blu-hover text-sm transition-colors p-2 rounded-xl "
-              >
-                Sign in
-              </Button>
-            </Form.Item>
-            <Form.Item className="">
-              <span className="text-sec">Don't have an account?  </span>
-              <span className="text-blue-600 text-blu">Sign up</span>
-            </Form.Item>
-          </div>
-        </Form>
+                    <Form.Item className="py-3">
+                      <Checkbox>
+                        <span className="ml-2 text-sm  text-gray-600">
+                          Remember my preference
+                        </span>
+                      </Checkbox>
+                    </Form.Item>
+                    <Form.Item className="py-3">
+                      <Button
+                        type="primary"
+                        htmlType="submit"
+                        className="w-full text-white bg-blue-600 text-base hover:bg-blue-hover text-sm transition-colors ounded-xl h-10 rounded-lg"
+                      >
+                        Sign in
+                      </Button>
+                    </Form.Item>
+                    <Form.Item className="">
+                      <span className="text-gray-600">
+                        Don't have an account?{" "}
+                      </span>
+                      <span className="text-blue-600 text-blue-500">
+                        Sign up
+                      </span>
+                    </Form.Item>
+                  </div>
+                </Form>
               </div>
+              </div>
+              
             </div>
           </div>
         </div>
